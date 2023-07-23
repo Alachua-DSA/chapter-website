@@ -10,11 +10,11 @@
 #  url: "https://twitter.com/dsachapter"
 #  username: dsachapter
 
-#instagram: &instagram
-#  label: "Instagram"
-#  icon: "fab fa-fw fa-instagram"
-#  url: "https://www.instagram.com/dsachapter/"
-#  username: dsachapter
+instagram: &instagram
+  label: "Instagram"
+  icon: "fab fa-fw fa-instagram"
+  url: "https://www.instagram.com/gnvalachuadsa/"
+  username: gnvalachuadsa
 
 #github: &github
 #  label: "GitHub"

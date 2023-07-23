@@ -42,10 +42,10 @@ logo: assets/images/smalllogo.png # PNG is SEO friendly
 social:
   name: Chapter of Democratic Socialists of America
   links:
-    - https://twitter.com/dsachapter
-    - https://www.facebook.com/dsachapter
-    - https://www.instagram.com/dsachapter
-    - https://www.github.com/dsachapter
+#    - https://twitter.com/dsachapter
+#    - https://www.facebook.com/dsachapter
+    - https://www.instagram.com/gnvalachuadsa
+    - https://www.github.com/Alachua-DSA
 # Site verifications
 # I don't understand this yet, but maybe this page is helpful:
 # https://support.google.com/webmasters/answer/9008080?hl=en

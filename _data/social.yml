@@ -13,8 +13,8 @@
 instagram: &instagram
   label: "Instagram"
   icon: "fab fa-fw fa-instagram"
-  url: "https://www.instagram.com/gnvalachuadsa/"
-  username: gnvalachuadsa
+  url: "https://www.instagram.com/alachuadsa/"
+  username: alachuadsa
 
 #github: &github
 #  label: "GitHub"
@@ -33,19 +33,19 @@ email: &email
 
 # This list appears in the footer of every page
 footer:
-  - *facebook
-  - *twitter
+#  - *facebook
+#  - *twitter
   - *instagram
-  - *github
+ # - *github
   - *email
 
 # This list appears in the dropdown of every blog post
 follow:
-  - *facebook
-  - *twitter
+#  - *facebook
+#  - *twitter
   - *instagram
 
 # I don't see where this gets used yet
 share:
-  - *facebook
+#  - *facebook
   - *twitter

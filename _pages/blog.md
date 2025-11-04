@@ -4,7 +4,7 @@ title: "Blog"
 permalink: /blog/
 ---
 
-Recent statements and articles by DSA Chapter.
+Events, posts, and news you can use from the Alachua County Democratic Socialists of America
 
 <div class="row my-5">
   {% for post in site.posts %}

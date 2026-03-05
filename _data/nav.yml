@@ -20,7 +20,9 @@ header:
   - title: "Events Calendar"
     url: "/calendar/"
     description: "Chapter Events Calendar"
-
+  - title: "Past Events"
+    url: /events/
+    description: "Past events" 
 # footer links
 footer:
   # Social media links are in `social.yml` so they aren't duplicated

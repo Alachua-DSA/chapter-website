@@ -1,0 +1,169 @@
+backend:
+  name: github
+  repo: Alachua-DSA/chapter-website
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://alachuadsa.org
+
+media_folder: "assets/img" # Media files will be stored in the repo under assets/img
+public_folder: "/assets/img" # The src attribute for uploaded media will begin with /assets/img
+
+collections:
+  # =============================================================================
+  # Projects Collection
+  # =============================================================================
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "img", widget: "image", required: false }
+      - { label: "Category", name: "category", widget: "select", options: ["work", "fun"], required: false }
+      - { label: "External Link", name: "redirect", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # =============================================================================
+  # News Collection
+  # =============================================================================
+  - name: "news"
+    label: "News & Announcements"
+    folder: "_news"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ssZ" }
+      - { label: "Inline Display", name: "inline", widget: "boolean", default: true, required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # =============================================================================
+  # Reviews Collection
+  # =============================================================================
+  - name: "reviews"
+    label: "Reviews"
+    folder: "_reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Reviewer Name", name: "reviewer_name", widget: "string" }
+      - { label: "Review Title", name: "review_title", widget: "string", required: false }
+      - { label: "Book Title", name: "book_title", widget: "string", required: false }
+      - { label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, required: false }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD" }
+      - { label: "Verified Purchase", name: "verified_purchase", widget: "boolean", default: false, required: false }
+      - { label: "Helpful Count", name: "helpful_count", widget: "number", value_type: "int", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # =============================================================================
+  # Blog Posts Collection
+  # =============================================================================
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Thumbnail Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Redirect URL", name: "redirect", widget: "string", required: false }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "External Source", name: "external_source", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # =============================================================================
+  # Pages Collection
+  # =============================================================================
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "_pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Align", name: "align", widget: "select", options: ["left", "right"], default: "right" }
+              - { label: "Image Circular", name: "image_circular", widget: "boolean", default: false }
+              - { label: "Logo", name: "logo", widget: "image", required: false }
+              - { label: "More Info", name: "more_info", widget: "text", required: false }
+          - { label: "Selected Papers", name: "selected_papers", widget: "boolean", default: true }
+          - { label: "Social Links", name: "social", widget: "boolean", default: true }
+          - label: "Announcements"
+            name: "announcements"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Scrollable", name: "scrollable", widget: "boolean", default: true }
+              - { label: "Limit", name: "limit", widget: "number", value_type: "int", default: 5 }
+          - label: "Latest Posts"
+            name: "latest_posts"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: false }
+              - { label: "Scrollable", name: "scrollable", widget: "boolean", default: true }
+              - { label: "Limit", name: "limit", widget: "number", value_type: "int", default: 3 }
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "_pages/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - label: "Projects Page"
+        name: "projects"
+        file: "_pages/projects.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - {
+              label: "Display Categories",
+              name: "display_categories",
+              widget: "list",
+              field: { label: "Category", name: "category", widget: "string" },
+            }
+          - { label: "Horizontal Layout", name: "horizontal", widget: "boolean", default: false }
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - label: "Blog Page"
+        name: "blog"
+        file: "_pages/blog.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+
+      - label: "News Page"
+        name: "news"
+        file: "_pages/news.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+
+      - label: "Publications Page"
+        name: "publications"
+        file: "_pages/publications.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+
+      - label: "404 Page"
+        name: "404"
+        file: "_pages/404.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Redirect", name: "redirect", widget: "boolean", default: true }
+          - { label: "Content", name: "body", widget: "markdown" }

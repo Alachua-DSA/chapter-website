@@ -9,18 +9,18 @@ public_folder: "/assets/img" # The src attribute for uploaded media will begin w
 
 collections:
   # =============================================================================
-  # Projects Collection
+  #  Collection
   # =============================================================================
-  - name: "projects"
-    label: "Projects"
-    folder: "_projects"
+  - name: "events"
+    label: "Events"
+    folder: "_events"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Image", name: "img", widget: "image", required: false }
-      - { label: "Category", name: "category", widget: "select", options: ["work", "fun"], required: false }
+      - { label: "Image", name: "img", widget: "image", required: true }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ssZ" }
       - { label: "External Link", name: "redirect", widget: "string", required: false }
       - { label: "Content", name: "body", widget: "markdown" }
 
@@ -38,21 +38,18 @@ collections:
       - { label: "Content", name: "body", widget: "markdown" }
 
   # =============================================================================
-  # Reviews Collection
+  # Articles Collection
   # =============================================================================
-  - name: "reviews"
-    label: "Reviews"
-    folder: "_reviews"
+  - name: "articles"
+    label: "Articles"
+    folder: "_articles"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Reviewer Name", name: "reviewer_name", widget: "string" }
-      - { label: "Review Title", name: "review_title", widget: "string", required: false }
-      - { label: "Book Title", name: "book_title", widget: "string", required: false }
-      - { label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, required: false }
+      - { label: "Author Name", name: "reviewer_name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Subitle", name: "subtitle", widget: "string", required: false }
       - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD" }
-      - { label: "Verified Purchase", name: "verified_purchase", widget: "boolean", default: false, required: false }
-      - { label: "Helpful Count", name: "helpful_count", widget: "number", value_type: "int", required: false }
       - { label: "Content", name: "body", widget: "markdown" }
 
   # =============================================================================

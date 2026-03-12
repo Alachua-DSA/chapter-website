@@ -12,7 +12,7 @@ bootswatch_theme: "united"
 
 # These settings are always used by Jekyll
 title: "Alachua County Chapter of Democratic Socialists of America"
-url: https://alachuadsa.org
+url: https://[dsachapter].dsachapters.org
 
 # These settings ase used by the jekyll-seo-tag plugin. The plugin adds
 # metadata tags for search engines and social networks to better index and
@@ -20,7 +20,7 @@ url: https://alachuadsa.org
 # site more discoverable to others. See this link for more information:
 # https://jekyll.github.io/jekyll-seo-tag/usage/
 # The tagline is used when `page.title` is not defined.
-tagline: "Your place for hogtown socialism"
+tagline: "Your place for socialism in North Central Florida"
 # The description is used when a page doesn't provide its own description.
 # It will also be used as the page's title tag if neither `page.title` nor
 # `site.tagline` has been defined.

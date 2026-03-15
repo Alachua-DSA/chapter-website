@@ -76,9 +76,9 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown", required: false }
-      - label: "Geg Involved"
-        name : "get_involved  "
-        file : "_pages/get_involved.md"
+      - label: "Get Involved"
+        name : "get_involved"
+        file : "_pages/get-involved.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown", required: false }
@@ -88,7 +88,6 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown", required: false }
-        fields
       - label: "404 Page"
         name: "404"
         file: "_pages/404.md"

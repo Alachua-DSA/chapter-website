@@ -13,7 +13,7 @@ collections:
   # =============================================================================
   - name: "events"
     label: "Events"
-    folder: "events"
+    folder: "_events"
     create: true
     slug: "{{slug}}"
     fields:
@@ -21,6 +21,7 @@ collections:
       - { label: "Description", name: "short_description", widget: "text" }
       - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ss" }
       - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "show_hero", name: "show_hero", widget: "boolean", required: true, default: true }
       - { label: "External Link", name: "redirect", widget: "string", required: false }
       - { label: "Content", name: "body", widget: "markdown" }
 

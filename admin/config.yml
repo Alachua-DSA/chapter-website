@@ -2,8 +2,7 @@ backend:
   name: github
   repo: Alachua-DSA/chapter-website	
   branch: main # Branch to update (optional; defaults to master)
-  base_url: https://alachuadsa.org
-
+  
 media_folder: "/assets/images" # Media files will be stored in the repo under assets/img
 public_folder: "/assets/images" # The src attribute for uploaded media will begin with /assets/img
 

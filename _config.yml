@@ -20,7 +20,7 @@ url: https://[dsachapter].dsachapters.org
 # site more discoverable to others. See this link for more information:
 # https://jekyll.github.io/jekyll-seo-tag/usage/
 # The tagline is used when `page.title` is not defined.
-tagline: "Your place for hogtown socialism"
+tagline: "Your place for socialism in North Central Florida"
 # The description is used when a page doesn't provide its own description.
 # It will also be used as the page's title tag if neither `page.title` nor
 # `site.tagline` has been defined.
@@ -44,8 +44,20 @@ social:
   links:
 #    - https://twitter.com/dsachapter
 #    - https://www.facebook.com/dsachapter
-    - https://www.instagram.com/gnvalachuadsa
+    - https://www.instagram.com/alachuadsa
     - https://www.github.com/Alachua-DSA
+
+#################
+##collections####
+#################
+collections:
+  events:
+    output: true
+    permalink: /events/:path
+  pages:
+    output: true
+    permlink: /:basename/
+
 # Site verifications
 # I don't understand this yet, but maybe this page is helpful:
 # https://support.google.com/webmasters/answer/9008080?hl=en
@@ -181,7 +193,6 @@ compress_html:
 
 # site defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts

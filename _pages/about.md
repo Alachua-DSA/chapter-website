@@ -14,5 +14,6 @@ Instead of investing taxpayer money into kidnapping our immigrant neighbors, our
 
 **Learn more and get involved [here](../get-involved/).**
 
-**or take a look at our [calendar](./calendar.md) and come [to an event](./events.md)** 
+**or take a look at our [calendar](../calendar) and come [to an event](../events)** 
+
 

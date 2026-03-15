@@ -1,0 +1,100 @@
+backend:
+  name: github
+  repo: Alachua-DSA/chapter-website	
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://alachuadsa.org
+
+media_folder: "/assets/images" # Media files will be stored in the repo under assets/img
+public_folder: "/assets/images" # The src attribute for uploaded media will begin with /assets/img
+
+collections:
+  # =============================================================================
+  # Events Collection
+  # =============================================================================
+  - name: "events"
+    label: "Events"
+    folder: "events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "short_description", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "External Link", name: "redirect", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+   # =============================================================================
+  # Blog Posts Collection
+  # =============================================================================
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Thumbnail Image", name: "image", widget: "image", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+  # =============================================================================
+  # Pages Collection
+  # =============================================================================
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "_pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Blog"
+        name: "blog"
+        file: "_pages/blog.md"
+        fields: 
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Calendar"
+        name: "calendar"
+        file: "_pages/calendar.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "Events"
+        name: "events"
+        file: "_pages/events.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+      - label: "News Page"
+        name: "news"
+        file: "_pages/news.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+      - label: "Geg Involved"
+        name : "get_involved  "
+        file : "_pages/get_involved.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+      - label: "Working Groups"
+        name : "working_group"
+        file : "_pages/working-groups.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown", required: false }
+        fields
+      - label: "404 Page"
+        name: "404"
+        file: "_pages/404.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Redirect", name: "redirect", widget: "boolean", default: true }
+          - { label: "Content", name: "body", widget: "markdown" }
+

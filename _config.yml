@@ -44,8 +44,20 @@ social:
   links:
 #    - https://twitter.com/dsachapter
 #    - https://www.facebook.com/dsachapter
-    - https://www.instagram.com/gnvalachuadsa
+    - https://www.instagram.com/alachuadsa
     - https://www.github.com/Alachua-DSA
+
+#################
+##collections####
+#################
+collections:
+  events:
+    output: true
+    permalink: /events/:path
+  pages:
+    output: true
+    permlink: /:basename/
+
 # Site verifications
 # I don't understand this yet, but maybe this page is helpful:
 # https://support.google.com/webmasters/answer/9008080?hl=en
@@ -181,7 +193,6 @@ compress_html:
 
 # site defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts

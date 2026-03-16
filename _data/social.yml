@@ -16,11 +16,11 @@ instagram: &instagram
   url: "https://www.instagram.com/alachuadsa/"
   username: alachuadsa
 
-#github: &github
-#  label: "GitHub"
-#  icon: "fab fa-fw fa-github"
-#  url: "https://github.com/dsachapter"
-#  username: dsachapter
+github: &github
+  label: "GitHub"
+  icon: "fab fa-fw fa-github"
+  url: "https://github.com/Alachua-DSA"
+  username: dsachapter
 
 email: &email
   label: "Email"
@@ -47,5 +47,4 @@ follow:
 
 # I don't see where this gets used yet
 share:
-#  - *facebook
-  - *twitter
+#  - *facebook *twitter

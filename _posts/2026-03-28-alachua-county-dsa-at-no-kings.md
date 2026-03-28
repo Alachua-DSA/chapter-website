@@ -1,5 +1,5 @@
 ---
-title: Alachua county DSA at no kings
+title: Alachua County DSA at No Kings
 date: 2026-03-28 12:46:00
 description: Alachua county DSA joined the community in protesting Trump and his gang of fascist dunces.
 tags:

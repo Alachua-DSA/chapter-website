@@ -12,7 +12,7 @@ Our members were out in force to show the community what we stand for and to par
 
 Steering committee co-chair Nelson gave a rousing speech:
 
-_"We in DSA are here today because we oppose Donald Trump and his murderous regime, and we stand in solidarity with all our communities and working people who are under attack, both here in the United States and abroad.
+"We in DSA are here today because we oppose Donald Trump and his murderous regime, and we stand in solidarity with all our communities and working people who are under attack, both here in the United States and abroad.
 
 In the past few months, we’ve watched in horror as the Trump administration bombs Venezuela and Iran in imperialistic acts of war. Not to mention the domestic terrorists who operate under the name of DHS. These acts of violence are not just attempts at furthering billionaire hegemony but attacks on working class people all over the world.
 

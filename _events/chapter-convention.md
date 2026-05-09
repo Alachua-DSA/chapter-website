@@ -1,23 +1,22 @@
 ---
 title: CHAPTER CONVENTION!
-short_description: Exciting news! Alachua County DSA is hosting its first chapter convention on June 6th! All dues-paying members have an opportunity to vote on resolutions, run for steering committee and working group positions, and ultimately to help determine our work for the next year.
+short_description: Exciting news! Alachua County DSA is hosting its first chapter convention on June 6th! 
 date: 2026-06-06 21:35:00
 image: /assets/images/chapter_convention.png
 show_hero: true
 layout: event 
 tag: event
 redirect: ''
+permalink: /events/chapter-convention/
 ---
 
-**Convention Basics**
+All dues-paying members have an opportunity to vote on resolutions, run for steering committee and working group positions, and ultimately to help determine our work for the next year.
 
-First, RSVP to the convention! We want to be sure to accommodate everyone who made the time to come!
+<h4>Convention Basics</h4>
 
-Next, submit your own resolution using the Resolution Submission Form. **The deadline to submit resolutions is May 24th at 11:59pm**.(IMPORTANT — You must receive the endorsement of two other chapter members to have it added to the convention schedule).
+First, RSVP to the convention! We want to be sure to accommodate everyone who made the time to come! Next, submit your own resolution using the Resolution Submission Form. **The deadline to submit resolutions is May 24th at 11:59pm**.(IMPORTANT — You must receive the endorsement of two other chapter members to have it added to the convention schedule). Then, please submit your Steering Committee bid. (Deadline to sign-up to run for SC elections is May 31st at 11:59pm)
 
-Then, please submit your Steering Committee bid. (Deadline to sign-up to run for SC elections is May 31st at 11:59pm)
-
-**See our Linktree for all of these links.**
+**See our [Linktree](https://linktr.ee/alachuadsa) for all of these links.**
 
 **Tools and Writing Guides**
 

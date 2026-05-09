@@ -1,9 +1,8 @@
 ---
 layout: page
-title: "Past Events"
+title: "Events"
 permalink: /events/
 ---
-
 
 <div class="row my-5">
   {% for post in site.events %}

@@ -38,7 +38,8 @@ layout: default
       {% endif %}
       <!-- post title -->
       <h1>{{ page.title }}</h1>
-      <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+      <h4><i>{{page.short_description }}</i></h4>
+      <p>{{ page.date | date: "%b %-d, %Y" }}</p> 
       {% if page.show_author %}
       <!-- post author, share -->
       <div class="row align-items-center py-2 border-top border-bottom blog-post-author">

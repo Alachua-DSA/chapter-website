@@ -5,7 +5,6 @@ date: 2026-06-06 21:35:00
 image: /assets/images/chapter_convention.png
 show_hero: true
 layout: post
-permalink: /events/pride-2025/
 tag: event
 redirect: ''
 ---

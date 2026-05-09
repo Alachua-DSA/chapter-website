@@ -1,6 +1,6 @@
 ---
+title: Working Groups
 layout: page
-title: "Working Groups"
 permalink: /working-groups/
 ---
 

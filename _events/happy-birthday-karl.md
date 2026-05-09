@@ -4,7 +4,7 @@ short_description: Happy birthday, Karl Marx! Marx’s analysis of a world trans
 date: 2026-05-08 21:30:00
 image: /assets/images/karl_marx.png
 show_hero: true
-layout: post
+layout: event
 redirect: ''
 tag: event
 ---

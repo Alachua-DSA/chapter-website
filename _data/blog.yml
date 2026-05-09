@@ -2,4 +2,7 @@
 authors:
   - name: "Alachua County DSA"
     headline: # byline? 
-    avatar: #"awesome_author.svg" # display_picture.jpg
+    avatar: assets/images/ascds.jpg #"awesome_author.svg" # display_picture.jpg
+  - name: "UF Young Democratic Socialists"
+    headline: "UF Young Democratic Socialists"
+    avatar: # how we get these

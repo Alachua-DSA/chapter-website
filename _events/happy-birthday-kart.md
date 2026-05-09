@@ -1,5 +1,5 @@
 ---
-title: Happy Birthday Kart!
+title: Happy Birthday Karl!
 short_description: Happy birthday, Karl Marx! Marx’s analysis of a world transforming under the pressures of capitalism, imperialism, and reactionary conservatism is foundational to socialist and communist movements around the world.
 date: 2026-05-08 21:30:00
 image: /assets/images/karl_marx.png

@@ -4,8 +4,11 @@ short_description: Happy birthday, Karl Marx! Marx’s analysis of a world trans
 date: 2026-05-08 21:30:00
 image: /assets/images/karl_marx.png
 show_hero: true
+layout: post
 redirect: ''
+tag: event
 ---
+
 
 Reading, thinking, and writing under the watchful eye of Prussian spymasters, in the salons of Paris, and, most famously, in the Reading Room of the British Library, Karl Marx saw through the optimistic veil of capitalist triumphalism to see the exploitative and inhumane forces that made capitalism work. In its place, he foresaw a socialist future where the immense output of capitalist production was controlled by workers and distributed to all.
 
